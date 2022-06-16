@@ -1,0 +1,44 @@
+Server:
+
+website.com/api/user/:id - get query that returns: {
+    "name": "John",
+    "email": "john@example.com",
+    "avatar": "avatars/someavatar.png",
+    "bio": "some biography",
+    "chats": ["9128302332", "12983902183", "1978273912"]
+}
+website/api/chats/:id - get query that returns: {
+    messages: [
+        {
+            "author_name": "name",
+            "content": "Some message"
+        }
+    ]
+}
+website.com/api/user/name_avatar/:id - {
+    "name": "name",
+    "author_id": "7123812",
+    "picture": "picture.jpg"
+}
+
+posts:
+website.com/api/post/:id - {
+    id: "181293712"
+    "title": "Some title",
+    "author_id": "1228273",
+    "picture_url": "pictures/somepicture.jpg",
+    "likes": ["12031200321", "213324236", "1823891792"],
+}
+comments:
+website.com/api/comment/:post_id - [
+    {
+        "commentator_id": "12312312",
+        "post_id": "1231231235",
+        "content": "Some content!"
+    },
+    {
+        "commentator_id": "9973246",
+        "post_id": "2398403298",
+        "content": "Some content 2!"
+    }
+]
